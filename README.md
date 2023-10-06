@@ -6,6 +6,13 @@ Package &amp; Script pour remonter les informations batterie sous WAPT et décle
 * Créer un utilisateur avec les droits de lecture sur la base WAPT
 * Avoir un accès à l'API GLPI
 
+# Configuration
+## Script GLPI
+Renseigner le fichier config.ini avec vos infos perso
+## Package WAPT
+* Déplacer le fichier `setup.py` dans votre package WAPT
+* Dans le fichier `control`, on peut fixer la date d'audit avec la ligne ```audit_schedule    : 30d``` pour avoir une date minimal d'audit des portables
+
 # Requète pour le reporting WAPT
 ```
 SELECT
